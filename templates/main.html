@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glucohealthy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label> 
+
+    <a href="#" class="logo">Glucohealthy<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-user" onclick="window.open('/inicio')"></a>
+    </div>
+
+</header>
+    
+</body>
+</html>
+
+
+
+<!--home-->
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Glucometro</h3>
+        <span>Be healthy</span>
+        <p>La falta de glucosa, también conocida como hipoglucemia, es un problema en el cual los niveles de azúcar en la sangre están por debajo de lo normal. Esto puede ocurrir cuando una persona no consume suficiente cantidad de alimentos o carbohidratos, o cuando toma demasiada insulina (una hormona que ayuda a regular los niveles de azúcar en la sangre).</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+</section>
+<!--fin-->
+
+<!--aboout-->
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> about </span> us </h1>
+    
+    <div class="row">
+        <div class="video-about">
+            <video src="../static/about.mp4" loop autoplay muted></video>
+            <h3>La mejor manera de medir tus niveles de glucosa</h3>
+        </div>
+        <div class="content">
+            <h3>¿Por que escogernos?</h3>
+            <p>1.Mejora de la salud: Contribuirías al manejo de la diabetes y mejorarías tu calidad de vida si eres de las personas afectadas.</p>
+            <p>2.Impacto social: Ayudarías a abordar una necesidad médica importante y beneficiarías a una amplia comunidad de pacientes.</p>
+            <p>3.Aprendizaje y desarrollo personal: Te permitiría adquirir conocimientos y habilidades en diversas áreas y crecer personlmente.</p>
+            <a href='#' class="btn">learn more</a>
+        </div>
+    </div>
+</section>
+<!--fin-->
+
+<!--review-->
+<section class="review" id="review">
+    <h1 class="heading"> customers <span>review</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>My mom is 88 years old and lives this meter because it says her number out loud and she doesn’t have to read the screen . 
+                It’s very cheap and after her old one died after many years so couldn’t get one through Medicare but found it here cheap. 
+                One thing it is a pain to set you have to take the back off and click through each choice if you’re in daylight savings
+                time twice a year. It’s a pain. Only flaw in this cheap option for someone wanting to hear their numbers</p>
+            <div class="user">
+                <img src="../static/Customer1.jpg" alt="">
+                <div class="user-info">
+                    <h3>Kindle Customer</h3>
+                    <span>Happy Customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>I've been using this brand of tester and strips for a few years, and am happy with them.</p>
+            <div class="user">
+                <img src="../static/Customer2.jpg" alt="">
+                <div class="user-info">
+                    <h3>Kindle Customer</h3>
+                    <span>Easy to use</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>This is without a doubt the worst meter I've used. I use it anyway. If you're buying a meter for the first time don't buy it. Get something really reliable like accuchek.</p>
+            <p>Why do I use it? Because the number of test strips that insurance will pay for has decreased dramatically. They will only pay for one or two a day for a type 2 diabetic. 
+                I need 6 to 8. Extreme hunger can signal either very high blood sugar or very low, and I have to handle those two things very differently or bad things will happen.</p>
+            <div class="user">
+                <img src="../static/Customer3.jpg" alt="">
+                <div class="user-info">
+                    <h3>Kindle Customer</h3>
+                    <span>Easy to use</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+    </div>
+</section>
+<!--fin-->
+
+<!--contact-->
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span> contact </span> us </h1>
+
+    <div class="row">
+        
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+
+        <div class="image">
+            <img src="../static/Contactanos.png" alt="">
+        </div>
+    </div>
+</section>

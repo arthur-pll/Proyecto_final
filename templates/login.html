@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso al sistema</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        function login(){
+            usuario=document.getElementById('usuario').value;
+            password=document.getElementById('password').value;
+            if (usuario != "" && password != "" ){
+                document.getElementById('formlogin').submit();
+            }
+            else {
+                document.getElementById('validacion').innerHTML="Debe ingresar todos los campos";
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <form action="/login" method="POST" id="formlogin">
+        <h1>Login</h1>
+        <label for="username">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <div id="boton">
+            <p><input type="submit" id="BtnIngreso" value="Login" onclick="login()"></p>
+            <p><input type="submit" id="BtnRegistro" value="registro" onclick="window.open('/registro')">
+        <p id="validacion"></p>
+    </div>
+    </form>
+</body>
+</html>
